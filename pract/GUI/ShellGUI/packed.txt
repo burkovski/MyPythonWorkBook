@@ -1,0 +1,4 @@
+::::::::::::::::::::textpak=>/home/burkovski/MyProjects/Python/pract/GUI/ShellGUI/spam.txt
+spam
+Spam
+SPAM

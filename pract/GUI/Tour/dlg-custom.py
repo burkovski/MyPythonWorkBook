@@ -1,6 +1,5 @@
 from tkinter import *
 
-
 makemodal = len(sys.argv) > 1
 
 
