@@ -11,3 +11,4 @@ if __name__ == "__main__":
     print(x.wrapped)
     x = Wrapped({'a': 1, 'b': 2})   # Обернуть словарь
     print(list(x.keys()))           # Деленировать операцию метода словаря
+    

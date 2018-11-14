@@ -25,6 +25,7 @@ def gen_func():
             yield x + 1
     return list(gen())
 
+
 if __name__ == '__main__':
     print(sys.version)
     for test in (for_loop, list_comp, map_call, gen_expr, gen_func):

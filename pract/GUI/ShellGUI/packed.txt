@@ -1,4 +1,10 @@
-::::::::::::::::::::textpak=>/home/burkovski/MyProjects/Python/pract/GUI/ShellGUI/spam.txt
+::::::::::::::::::::textpak=>D:/Projects/Python/pract/GUI/ShellGUI/eggs.txt
+eggs
+::::::::::::::::::::textpak=>D:/Projects/Python/pract/GUI/ShellGUI/ham.txt
+h
+  a
+     m
+::::::::::::::::::::textpak=>D:/Projects/Python/pract/GUI/ShellGUI/spam.txt
 spam
 Spam
 SPAM

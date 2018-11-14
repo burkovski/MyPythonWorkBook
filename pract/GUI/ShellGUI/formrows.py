@@ -27,4 +27,3 @@ def make_formrow(parent, label, width=15, browse=True, extend=False):
             action = lambda: var.set("{} {}".format(var.get(), askopenfilename()))
         button.config(command=action)
     return var
-

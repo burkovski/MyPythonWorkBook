@@ -2,188 +2,290 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1ce0b98-0b3a-4bc7-85ed-69298982983b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/burkovski.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/PIL/image-tk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/PIL/image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/PIL/viewer-dir.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/PIL/viewer-thumbs-grid-fixed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/PIL/viewer_thumbs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/eggs.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/formrows.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/ham.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/mytools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/packdlg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/packed.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/packer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/shellgui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/spam.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/unpackdlg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/unpacker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/big_gui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/guimaker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/guimixin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/launchmodes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/widgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid2_same.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5-data1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/charmingpython.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/charmingpython.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/hahaha.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/hahaha.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/hills.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/hills.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-lp-france.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-lp-france.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-lp.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-lp.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-lp4e.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-lp4e.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pp-japan2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pp-japan2.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pp.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pp.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pp1e-s.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pp1e-s.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pp2e.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pp2e.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-ppr-german.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-ppr-german.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-ppr.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-ppr.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-ppython-s.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pyref4e.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ora-pyref4e.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/oreilly_giraffe3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/oreilly_giraffe3.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/oreilly_moose3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/oreilly_moose3.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/oreilly_weasel3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/oreilly_weasel3.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ppython_sm_ad.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/ppython_sm_ad.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/pythonHi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/pythonHi.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/pythonPowered.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/pythonPowered.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/python_conf_ora.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/python_conf_ora.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/pythonwin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/pythonwin.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/rmnp.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/rmnp.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-nyc.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-nyc.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-puertorico-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-puertorico-1.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-puertorico-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-puertorico-2.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-uk-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-uk-1.note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-uk-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract/GUI/gifs/training-uk-2.note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/HP.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Clock/clock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Clock/gui_plotter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/guiStreams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/packdlg_redirect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/guiStreams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/mainloopdemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/pipe-nongui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/pipe_gui3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/queuetest-gui-class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/queuetest-gui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/rad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/radactions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/threadtools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/threadtools_test_classes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/widows_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/GUI/Tools/windows.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailconfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailtools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailconfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailfetcher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailparser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailsender.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailtool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailtools/monkeys.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailtools/selftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/mailtools/sentmail.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/popmail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/pymail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/sentmail.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Email/smtpmail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/downloadflat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/downloadflat_modular.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/ftptools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/uploadflat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/uploadflat_modular.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/getfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/getfilegui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/getone-modular.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/getone-urllib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/getone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/putfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Ftp/putfilegui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/class-server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/echo-client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/echo-server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/getfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/getfilegui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/getfilegui1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/getfilegui2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/select-server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/sockets_stream_redirect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/test_socket_stream_redirect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/testdir/ora-lp4e.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/testdir/textfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/testecho.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/textfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/Sockets/thread-server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/Internet/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/SystemProg/Media/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pract/SystemProg/Media/playfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/threading module/thread-classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/1_SystemProg/Threads/threading module/thread-classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/cofig-button.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/config-label.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/demoDlg-print.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/demoDlg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/dialog-old.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/dialogTable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/dlg-custom.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/dlg1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/setcolor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/toplevel0.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/part1/toplevel2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pract/GUI/Tour/quitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/GUI/Tour/Grid/quitter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu/5. classes/design patterns with classes/trace.py" beforeDir="false" afterPath="$PROJECT_DIR$/edu/5. classes/design patterns with classes/trace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylib/timeseqs.py" beforeDir="false" afterPath="$PROJECT_DIR$/mylib/timeseqs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/GUI introduce/tkinter 105.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/GUI introduce/tkinter 105.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/GUI introduce/tkinter100.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/GUI introduce/tkinter100.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/GUI introduce/tkinter101.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/GUI introduce/tkinter101.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/GUI introduce/tkinter102.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/GUI introduce/tkinter102.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/GUI introduce/tkinter103.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/GUI introduce/tkinter103.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/cgi-bin/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/cgi-bin/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/cgi-bin/cgi101.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/cgi-bin/cgi101.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/cgi-bin/initdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/cgi-bin/initdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/cgi-bin/peoplecgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/cgi-bin/peoplecgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/cgi101.html" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/cgi101.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/class-shelve.bak" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/class-shelve.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/class-shelve.dat" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/class-shelve.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/class-shelve.dir" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/class-shelve.dir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/dump_db_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/dump_db_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/initdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/initdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/make_db_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/make_db_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/people_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/people_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/peoplecgi.html" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/peoplecgi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/peopleinteract_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/peopleinteract_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/peopleinteract_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/peopleinteract_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/update_db_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/update_db_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/Release/webserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/Release/webserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/file/dump_db_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/file/dump_db_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/file/initdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/file/initdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/file/make_db_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/file/make_db_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/file/people-file" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/file/people-file" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/file/update_db_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/file/update_db_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/bob.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/bob.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/dump_db_pickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/dump_db_pickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/dump_db_pickle_recs.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/dump_db_pickle_recs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/initdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/initdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/make_db_pickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/make_db_pickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/make_db_pickle_recs.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/make_db_pickle_recs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/people-pickle" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/people-pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/sue.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/sue.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/tom.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/tom.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/update_db_pickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/update_db_pickle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/pickle/update_db_pickle_recs.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/pickle/update_db_pickle_recs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/shelve/dump_db_shelve.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/shelve/dump_db_shelve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/shelve/initdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/shelve/initdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/shelve/make_db_shelve.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/shelve/make_db_shelve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/shelve/people-shelve.bak" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/shelve/people-shelve.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/shelve/people-shelve.dat" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/shelve/people-shelve.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/shelve/people-shelve.dir" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/shelve/people-shelve.dir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/0_Preview/shelve/update_db_shelve.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/Preview/shelve/update_db_shelve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/adder.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/adder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/hello-in.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/hello-in.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/hello-in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/hello-in.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/hello-out.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/hello-out.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/hillbilles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/hillbilles.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/hillbilles.txt.out" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/hillbilles.txt.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/lister_walk.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/lister_walk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/more.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/random.bin" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/random.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/reader" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/reader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/scanfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/scanfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/sorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/sorter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/teststreams.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/teststreams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/whereami.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/whereami.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/writer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Filetools/writer2.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Filetools/writer2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Multiprocessing/child.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Multiprocessing/child.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Multiprocessing/multi1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Multiprocessing/multi1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Multiprocessing/multi2.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Multiprocessing/multi2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Multiprocessing/multi3.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Multiprocessing/multi3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Multiprocessing/multi4.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Multiprocessing/multi4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Multiprocessing/multi5.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Multiprocessing/multi5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Multiprocessing/multi6.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Multiprocessing/multi6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Other/child.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Other/child.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Other/makewords.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Other/makewords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Other/spawnv.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Other/spawnv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Pipes/pipe-thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Pipes/pipe-thread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Sockets/socket_preview.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Sockets/socket_preview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Sockets/socket_preview_progs.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Sockets/socket_preview_progs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/bigext-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/bigext-tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/bigpy-dir.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/bigpy-dir.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/bigpy-path.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/bigpy-path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/bigpy-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/bigpy-tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/cleanpyc.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/cleanpyc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/cpall.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/cpall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/difall.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/difall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/dirdiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/dirdiff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/find-all.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/find-all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/find.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/find.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/join.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/join.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/split.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/split.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/visitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/visitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/visitor_cpall.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/visitor_cpall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/visitor_edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/visitor_edit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/SystemTools/visitor_sloc.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/SystemTools/visitor_sloc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/_thread module/queuetest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Threads/_thread module/queuetest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/_thread module/thread-count-mutex.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Threads/_thread module/thread-count-mutex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/_thread module/thread-count-wait1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Threads/_thread module/thread-count-wait1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/_thread module/thread-count-wait2.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Threads/_thread module/thread-count-wait2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/_thread module/thread-count.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Threads/_thread module/thread-count.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/_thread module/thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Threads/_thread module/thread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/threading module/four-threads1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Threads/threading module/four-threads1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/threading module/thread-add-random.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Threads/threading module/thread-add-random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/1_SystemProg/Threads/threading module/thread-classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/SystemProg/Threads/threading module/thread-classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/GUI/ShellGUI/formrows.py" beforeDir="false" afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/formrows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract/GUI/ShellGUI/packed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pract/GUI/ShellGUI/packed.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1485923694">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="64" />
+          <entry key="project.open.time.10" value="9" />
+          <entry key="project.open.time.11" value="6" />
+          <entry key="project.open.time.12" value="3" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="15" />
+          <entry key="project.open.time.8" value="21" />
+          <entry key="project.open.time.9" value="8" />
+          <entry key="project.opened" value="77" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gif" value="1" />
+          <entry key="html" value="4" />
+          <entry key="ipynb" value="1" />
+          <entry key="jpg" value="1" />
+          <entry key="py" value="119" />
+          <entry key="txt" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="4" />
+          <entry key="IPNB" value="1" />
+          <entry key="Image" value="2" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="119" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="1801" />
+          <entry key="dummy" value="7" />
+          <entry key="py" value="85861" />
+          <entry key="txt" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="Python" value="87662" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Python" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="eggs.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/eggs.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="mytools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/mytools.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/mailfetcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ham.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/ham.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="packdlg.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/packdlg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="6664">
+              <caret line="394" selection-start-line="394" selection-end-line="394" />
               <folding>
-                <element signature="e#75#96#0" expanded="true" />
+                <element signature="e#262#279#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formrows.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/formrows.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/mailparser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            <state relative-caret-position="17">
+              <caret line="326" column="25" selection-start-line="326" selection-start-column="25" selection-end-line="326" selection-end-column="25" />
               <folding>
-                <element signature="e#375#396#0" expanded="true" />
+                <element signature="e#259#268#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unpackdlg.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/unpackdlg.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/mailsender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="731">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
-                <element signature="e#64#130#0" expanded="true" />
+                <element signature="e#251#301#0" expanded="true" />
+                <marker date="1542106966997" expanded="true" signature="2748:3293" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="packer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/packer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="packed.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/packed.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -193,6 +295,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -203,64 +306,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/menu_frame.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/menu_win.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/menu_frame-multi.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/mbutton.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/menu_frame-multi2.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/optionmenu.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/menuDemo.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/menuDemo2.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/scrolledlist.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/scrolledtext.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/simpleedit.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/texttags.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/canvas1.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/scrolledcanvas.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/viewer_thumbs_scrolled.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/canvasDraw.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/canvas-bind.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid1.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid2.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid2_same.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid3.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid4.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5b.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/__init__.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid55.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/quitter.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/test.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5c.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/alarm.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/alarm-hide.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/alarm-withdraw.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/canvasDraw_tags_after.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/canvasDraw_tags_thread.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tour/part2/canvasDraw_tags.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tools/widgets.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tools/big_gui1.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tools/big_gui.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tools/guimixin.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/try.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/mytools.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/packer.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/гтзфслук.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/unpacker.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/packdlg.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/__init__.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/shellgui.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/Tools/guimaker.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/eggs.txt" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/unpackdlg.py" />
-        <option value="$PROJECT_DIR$/pract/GUI/ShellGUI/formrows.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/test/testin.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/test/testout.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/select-server.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/sockets_stream_redirect.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/test_socket_stream_redirect.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/test.py" />
+        <option value="$PROJECT_DIR$/edu/5. classes/design patterns with classes/trace.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/getfile.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/testdir/getfilegui1.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/getfilegui1.py" />
+        <option value="$PROJECT_DIR$/mylib/timeseqs.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/getfilegui2.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/form.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/getfilegui.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/getone.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/getone-urllib.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/getone-modular.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/putfile.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/getfilegui.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/getfile.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/putfilegui.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/downloadflat.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/uploadflat.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/downloadflat_modular.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/uploadflat_modular.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/test/a.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/test/b.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/test/c.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Ftp/Mirror/ftptools.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/popmail.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailconfig.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/smtpmail.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Sockets/testdir/textfile.txt" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/pymail.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/mail_fetch.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/mail_sender.py" />
+        <option value="$PROJECT_DIR$/useful/bar.py" />
+        <option value="$PROJECT_DIR$/useful/foo.py" />
+        <option value="$PROJECT_DIR$/useful/bar/boo.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/__init__.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/mail_parser.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/mail_fetcher.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailtool.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailfetcher.py" />
+        <option value="$PROJECT_DIR$/perflist.py" />
+        <option value="$PROJECT_DIR$/pract/SystemProg/Threads/threading module/thread-classes.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/sentmail.txt" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailparser.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/selftest.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailconfig.py" />
+        <option value="$PROJECT_DIR$/pract/Internet/Email/mailtools/mailsender.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="619" />
-    <option name="y" value="74" />
-    <option name="width" value="779" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="814" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -271,35 +374,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="pract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="pract" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="pract" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-              <item name="ShellGUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Changed Files">
           <expand>
@@ -399,21 +473,59 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="pract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="pract" type="462c0819:PsiDirectoryNode" />
+              <item name="Internet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="pract" type="462c0819:PsiDirectoryNode" />
+              <item name="Internet" type="462c0819:PsiDirectoryNode" />
+              <item name="Email" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="pract" type="462c0819:PsiDirectoryNode" />
+              <item name="Internet" type="462c0819:PsiDirectoryNode" />
+              <item name="Email" type="462c0819:PsiDirectoryNode" />
+              <item name="mailtools" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Загрузки/PP4E/Gui/Tour/buttonpics.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pract/GUI/ShellGUI" />
-      <recent name="$PROJECT_DIR$/pract/GUI/Tools" />
-      <recent name="$PROJECT_DIR$/pract/GUI/Tour/Grid" />
-      <recent name="$PROJECT_DIR$/pract/GUI/Tour/part2" />
-      <recent name="$PROJECT_DIR$/pract/GUI/Tour" />
+      <recent name="D:\Projects\Python\pract\Internet\Email\mailtools" />
+      <recent name="D:\Projects\Python\pract\Internet\Email" />
+      <recent name="D:\Projects\Python\pract\Internet\Sockets\testdir" />
+      <recent name="D:\Projects\Python\pract\Internet\Sockets" />
+      <recent name="D:\Projects\Python\pract\SystemProg\Media" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Python\pract\Internet\Sockets" />
       <recent name="$PROJECT_DIR$/pract/GUI/Tour" />
       <recent name="$PROJECT_DIR$/pract/GUI/Tour/part1" />
       <recent name="$PROJECT_DIR$/pract/GUI/PIL" />
@@ -431,91 +543,147 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mytools">
-    <configuration name="big_gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.perflist">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pract/GUI/Tools" />
+      <option name="SDK_HOME" value="D:\Projects\Python\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pract/Internet/Email/mailtools" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pract/GUI/Tools/big_gui.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pract/Internet/Email/mailtools/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="mytools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pract/GUI/ShellGUI" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="D:\Projects\Python\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pract/GUI/ShellGUI/mytools.py" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="packdlg" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="b" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pract/GUI/ShellGUI" />
+      <option name="SDK_HOME" value="D:\Projects\Python\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pract/Internet/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pract/GUI/ShellGUI/packdlg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pract/Internet/test/b.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="shellgui" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="c" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pract/GUI/ShellGUI" />
+      <option name="SDK_HOME" value="D:\Projects\Python\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pract/Internet/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pract/GUI/ShellGUI/shellgui.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pract/Internet/test/c.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="perflist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Projects\Python\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/perflist.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="popmail" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Projects\Python\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pract/Internet/Email" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pract/Internet/Email/popmail.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.big_gui" />
-      <item itemvalue="Python.shellgui" />
-      <item itemvalue="Python.mytools" />
-      <item itemvalue="Python.packdlg" />
+      <item itemvalue="Python.b" />
+      <item itemvalue="Python.c" />
+      <item itemvalue="Python.popmail" />
+      <item itemvalue="Python.__init__" />
+      <item itemvalue="Python.perflist" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mytools" />
-        <item itemvalue="Python.packdlg" />
-        <item itemvalue="Python.shellgui" />
-        <item itemvalue="Python.big_gui" />
+        <item itemvalue="Python.perflist" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.popmail" />
+        <item itemvalue="Python.c" />
+        <item itemvalue="Python.b" />
       </list>
     </recent_temporary>
   </component>
@@ -542,255 +710,339 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1600" height="874" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19657578" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.22429305" />
+      <window_info id="Structure" order="1" sideWeight="0.502008" side_tool="true" weight="0.14781491" />
+      <window_info id="Favorites" order="2" sideWeight="0.502008" side_tool="true" weight="0.14781491" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7962725" weight="0.17789757" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931727" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.328877" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1793842" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32931727" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32884097" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32884097" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32884097" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20372751" side_tool="true" weight="0.17789757" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" weight="0.32969153" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.32969153" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/canvas1.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/scrolledcanvas.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/viewer_thumbs.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/viewer_thumbs_scrolled.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/canvas-bind.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid1.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/monkeys.jpg" />
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/getone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="62" />
+        <state relative-caret-position="238">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid2.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/getone-urllib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        <state relative-caret-position="289">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid2_same.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/getfilegui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        <state relative-caret-position="986">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/qwert/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid55.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/quitter.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/getfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="561">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid4.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/putfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="391">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/form.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        <state relative-caret-position="408">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5b.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/putfilegui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid3.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/getone-modular.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5c.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/Mirror/uploadflat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+        <state relative-caret-position="1003">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/test.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/Grid/grid5-data1.txt">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/Mirror/downloadflat_modular.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/test/a.py" />
+    <entry file="file://$PROJECT_DIR$/pract/Internet/test/b.py" />
+    <entry file="file://$PROJECT_DIR$/pract/Internet/test/c.py" />
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/Mirror/uploadflat_modular.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python/Lib/poplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret line="151" column="34" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/Mirror/ftptools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Ftp/Mirror/downloadflat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="62" column="74" selection-start-line="62" selection-start-column="74" selection-end-line="62" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/testdir/textfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/echo-client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/data.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/canvasDraw_tags.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/canvasDraw.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/canvasDraw_tags_thread.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/canvasDraw_tags_after.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/alarm-withdraw.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/alarm-hide.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/alarm.py" />
-    <entry file="file://$PROJECT_DIR$/pract/launchmodes.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailconfig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="204">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/menu_frame.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/mbutton.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/menu_frame-multi.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tools/launchmodes.py">
+    <entry file="file://$PROJECT_DIR$/useful/bar.py" />
+    <entry file="file://$PROJECT_DIR$/useful/foo.py" />
+    <entry file="file://$PROJECT_DIR$/useful/bar/boo.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/asyncio/events.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/menu_win.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tour/part2/menu_frame-multi2.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tools/big_gui.py">
+    <entry file="file://$PROJECT_DIR$/edu/3. functions/generators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#91#100#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="99">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tools/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tools/guimixin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/test.py" />
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/__init__.py">
+    <entry file="file://$PROJECT_DIR$/perflist.py" />
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/thread-server.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/unpacker.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/echo-server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="391">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#98#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/shellgui.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/class-server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/getfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/getfilegui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/getfilegui1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/getfilegui2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Sockets/sockets_stream_redirect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/SystemProg/Threads/threading module/four-threads1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/SystemProg/Threads/threading module/thread-add-random.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/SystemProg/Threads/threading module/thread-classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/sentmail.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/mailtool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/mailconfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/popmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/smtpmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/sentmail.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
-          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/pymail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="127" column="61" lean-forward="true" selection-start-line="127" selection-start-column="61" selection-end-line="127" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/selftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/mailfetcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6664">
+          <caret line="394" selection-start-line="394" selection-end-line="394" />
           <folding>
-            <element signature="e#195#274#0" expanded="true" />
+            <element signature="e#262#279#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tools/big_gui.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/mailsender.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="90" column="26" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+        <state relative-caret-position="731">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
-            <element signature="e#91#100#0" expanded="true" />
+            <element signature="e#251#301#0" expanded="true" />
+            <marker date="1542106966997" expanded="true" signature="2748:3293" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/Tools/guimaker.py">
+    <entry file="file://$PROJECT_DIR$/pract/Internet/Email/mailtools/mailparser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+        <state relative-caret-position="17">
+          <caret line="326" column="25" selection-start-line="326" selection-start-column="25" selection-end-line="326" selection-end-column="25" />
           <folding>
-            <element signature="e#343#364#0" expanded="true" />
+            <element signature="e#259#268#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/ham.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/eggs.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/spam.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/packed.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/unpackdlg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#64#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/packer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/mytools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/packdlg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#75#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pract/GUI/ShellGUI/formrows.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-          <folding>
-            <element signature="e#375#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
