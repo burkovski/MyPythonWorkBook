@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Putfile: download page</title>
+</head>
+<body>
+    <h1>Type name of server file to be viewed</h1>
+    <hr>
+    <form method="post" action="cgi-bin/getfile.py">
+        <p>
+            <input type="text" size="50" name="filename">
+            <input type="submit" value="Download">
+        </p>
+    </form>
+    <hr>
+    <a href="cgi-bin/getfile.py?filename=cgi-bin\getfile.py">View script code</a>
+</body>
+</html>

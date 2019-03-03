@@ -13,11 +13,7 @@
 """
 
 import poplib
-import getpass
-import sys
-import logging
-import mailconfig
-
+from mailtools import mailconfig
 
 mail_server = mailconfig.pop_servername
 mail_user = mailconfig.pop_username

@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--GENHTML INSERT ^^ ================================================================-->
+<!--
+12/15: Add a doctype spec on line 1 so IE does fixed footer positioning at bottom.
+But use HTML 4 (not 5) spec, so images in tables look as they did with no doctype.
+Makes some things render diff (e.g, tables at top, and having hdrs), but no worse.
+More details: https://en.wikipedia.org/wiki/Quirks_mode#Comparison_of_document_types.
+-->
+<!--==================================================================================-->
+
+<HTML>
+
+
+
+<HEAD>
+
+<!--GENHTML INSERT====================================================================-->
+<!--
+For this file only: UTF-8 Unicode encoding for non-ASCII or non-English characters.
+Browsers may guess correctly if this is omitted, but may also just use user settings.
+<meta> is used for multiple goals (e.g., http-equiv="Refresh" content="10; URL=...). 
+Caution: some files saved with Windows tools may be Latin-1 (windows-1252): see 
+their HTML tags, and open/save with care in coding-explicit editors like PyEdit -
+opening and saving as UTF-8 bindly may trash Latin-1 quotes, and other text.
+-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!--==================================================================================-->
+
+
+<!--GENHTML INSERT===================================================================-->
+<!--
+Recoded Aug-18 to use relative path, after broken by https:// conversion: can't mix 
+http:// page resources (see .htaccess note).  This required regenerating and uploading 
+all .html files, but not hundreds of manual page edits - genhtml works.  Formerly 
+used ICON-DEFAULT, which has now-dated docs on icon links and filetypes in general;
+an icon in the root folder suffices on some (but not all) web servers.
+-->
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<!--=================================================================================-->
+
+
+<!--GENHTML INSERT==================================================================-->
+<!--
+7/6/14: JS analytics code in <HEAD>, to isolate high-traffic pages, iff JS enabled. 
+Former training sites's id: ga('create', 'UA-52578333-1', 'auto').
+Book site's id, now used for all: ga('create', 'UA-52579036-1', 'auto').
+JavaScript is also used if enabled for thumbspage dynamic image scaling.
+-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52579036-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!--================================================================================-->
+
+
+<!--GENHTML INSERT========================================================-->
+<!--
+Nov-15: CSS file, code in <HEAD>, for fonts, borders, navbars, etc.
+Could also be an in-page <STYLE> sheet, as genhtml pastes any text.
+-->
+
+<link rel="stylesheet" type="text/css" href="_main.css">
+
+<!--
+Feb-18: add mobile-friendly viewport tag to every page's HEAD.
+Fit to device width, no zoom (user may), impacts MANY formats.
+Extend STYLE instead of new insert to avoid all-page updates.
+Mobile required other redesign: toolbar, code blocks, images,... 
+-->
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--======================================================================-->
+
+
+<STYLE>
+    
+/*------------------------------------------------------------------------------------
+BANNER FONT - punt here: too jarring to go to subpages with larger title font;
+see also similar site-wide option in _main.css (not used), and training-main.css;
+
+H1 {                         
+    font-size: 125%;                * 0..360; alt: vw size specs, but not in all wb *
+}
+
+@media screen and (min-width: 361px) {
+H1 {                         
+    font-size: 160%;                * 361..480 *
+}
+}
+
+@media screen and (min-width: 481px) {
+H1 {                         
+    font-size: 200%;                * 481+ (seems 200%) *
+}
+}
+*-------------------------------------------------------------------------------------
+
+</STYLE>
+
+<TITLE>Mark Lutz's Books, Software, Etc.</TITLE>
+
+</HEAD>
+
+
+
+<BODY BGCOLOR=white>    <!-- NOT full page, post fixed toolbar: should match book links page -->
+
+<!-- same in index-book-links.html (copy to) -->
+<P>
+<TABLE bgcolor=cornsilk width="100%" border=0>
+<tr>
+
+
+<td width=50px valign=top bgcolor=tan>     <!-- 50px sets a max size on expansion -->
+<TABLE border=0 class=bookicons>           <!-- feb18: use higher res images here too -->
+
+<tr><td style="padding-bottom: 8px";>
+  <A HREF="about-lp.html">    
+  <IMG SRC="lp5e-large.jpg"      ALIGN=left  ALT="[LP5E]" border=2 width=72 height=95></A>      <!--was duller ora-lp5e-tiny.jpg-->
+
+<tr><td style="padding-bottom: 8px";>
+  <A HREF="about-pp.html">    
+  <IMG SRC="ora-pp4e-large.jpg"  ALIGN=left  ALT="[PP4E]" border=2 width=72 height=95></A>      <!--was duller ora-pp4e-tiny.jpg-->
+
+<tr><td>
+  <A HREF="about-pyref.html"> 
+  <IMG SRC="ora-pyref5e-big.jpg" ALIGN=left  ALT="[PyRef5E]" border=2 width=45 height=74></A>      <!--was duller ora-pyref5e-tiny.jpg-->
+
+</TABLE>
+<!--end copy -->
+
+
+<td><td>
+<td>
+<H1><I>Mark Lutz's Books, Software, Etc.</I></H1>
+
+
+<P>
+<I>Welcome</I>.
+At this <A class=subtlelink href="about-this-site.html">site</A>, you can explore:
+</P>
+
+
+<P>
+<TABLE border=0 cellpadding=9 cellspacing=3 class=linkstable>
+
+<!-- jan16: drop nowrap, but increase fixed size (see css) -->
+<!-- feb18: to shave more pixels for mobile, cellpadding 10 => 9, extra <td> => style -->
+<!-- sep18: trim left margin on small (320px) devices, else no right border (see css) -->
+  
+<TR>
+<TD bgcolor=tan align=center> <A class=blocklink HREF="index-book-links.html" style="color: black;">
+   <B>Books</B></A>
+
+<TD bgcolor=tan align=center> <A class=blocklink HREF="about-python.html" style="color: black;">
+    <B>Python</B></A>
+
+<TR>
+<TD bgcolor=tan align=center> <A class=blocklink HREF="programs.html" style="color: black;">
+   <B>Programs</B></A>
+
+<TD bgcolor=tan align=center> <A class=blocklink HREF="formalbio.html" style="color: black;">
+    <B>Author</B></A>
+
+<TR>
+<TD bgcolor=tan align=center> <A class=blocklink HREF="posts.html" style="color: black;">
+    <B>Blog</B></A> 
+
+<TD bgcolor=tan align=center> <A class=blocklink HREF="training.html" style="color: black;">
+    <B>Training</B></A>
+
+</TABLE>
+
+
+<P>
+You can also click the book images to the left to jump to book titles. 
+This site's latest update: 
+<I>Nov-8-2018</I>.
+  <!-- hardcode for trivial changes: <I>Jul-6-2018</I>. -->
+  <!-- auto for non-trivial changes: <I>Nov-7-2018</I>. -->
+</tr>
+</TABLE>
+</P>
+
+
+
+<!--GENHTML INSERT==================================================================-->
+<!--
+Nov15: added via genhtml.py, to avoid pasting footer in every file on changes.
+See learning-python.com/genhtml.html for other options and their tradeoffs.
+Caveat: this is now the same as FOOTERTAN; used to differ for top-level context.
+-->
+
+</P>
+
+<!--Feb18: make table responsive, for mobile-friendly scrollbar on small screens -->
+<BR><BR>
+<DIV class=footerdiv>
+
+<TABLE class=footertable bgcolor=tan width="100%">
+
+<!-- NESTED INSERT: can't nest > 2 deep -->      <!-- gif now is Home, not python.org -->
+<TD align=center>                                <!-- border=0 for IE img links       -->
+  <A class=blocklinkbar href="index.html">       <!-- scale larger gif for better res -->
+  <IMG SRC="PythonPowered.gif" ALT="[Home]" border=0 width=55 height=22></A>  
+<TD align=center>
+  <A class=blocklinkbar HREF="index-book-links.html">Books</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="programs.html">Programs</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="posts.html">Blog</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="about-python.html">Python</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="formalbio.html">Author</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="training.html">Training</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="sitesearch.html">Search</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="mailto:lutz@learning-python.com">Email</A>
+<!--
+<TD align=center>
+  <A class=blocklinkbar HREF="#">Top</A>
+-->
+<TD align=center>
+  &copy;<I>M.Lutz</I>
+<!-- END NESTED INSERT -->
+
+</TABLE>
+
+</DIV>
+
+<!--================================================================================-->
+
+
+</BODY>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0588'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
+
+

@@ -10,8 +10,7 @@ smtplib для отправки новых писем и пакет email для
 import poplib
 import smtplib
 import email.utils
-import mailconfig
-
+from mailtools import mailconfig
 
 from email.parser import Parser
 from email.message import Message

@@ -1,0 +1,3 @@
+Error in file: 'D:\Univ\oop\lab3\filetools.cpp'
+	 line: 7
+	 text: 'class FileTools {'

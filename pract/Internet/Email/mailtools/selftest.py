@@ -1,62 +1,57 @@
-"""
-############################################################################
-когда этот файл запускается как самостоятельный сценарий, выполняет
-тестирование пакета
-############################################################################
-"""
-
-#
-# обычно используется модуль mailconfig, находящийся в каталоге клиента
-# или в пути sys.path; для нужд тестирования берется модуль
-# из каталога Email уровнем выше
-#
-
-import mailconfig
 import sys
+import email.header
 
-sys.path.append('..')
-print("file: {}".format(mailconfig.__file__))
-
-# Получить из __init__
+from mailtools import mailconfig
 from mailtools import MailFetcherConsole, MailSenderAuthConsole, MailParser
+
+
+sys.path.append("..")
+print("Config from: {}".format(mailconfig.__file__))
+
 sender = MailSenderAuthConsole(trace_size=5000)
-sender.send_message(From=mailconfig.my_address,
-                    To=[mailconfig.my_address],
-                    Subj="testing mailtools package",
-                    extra_hgrs=[("X-Mailer", "mailtools")],
-                    body_text="Here is my source code\n",
-                    attaches=["selftest.py"])
-                    # body_text_enc="utf-8",
-                    # attaches_enc=["latin-1"],
-                    # attaches=["monkeys.jpg"])
+sender.send_message(
+    from_=mailconfig.my_address,
+    to=["burkovski.danil@icloud.com", "burkovski.danil@gamil.com"],
+    subj="Test mailtools package",
+    extra_headers=[("X-Mailer", "Mailtools")],
+    body_text="Here is my source code!\n",
+    attaches=["selftest.py"],
+    body_text_encoding="utf-8",
+    attaches_encoding=["utf-8"],
+)
+
+
+def progress(now, total):
+    print("{0:>3} form {1:<3}: {2:>3}%\r".format(now, total, int(now / total * 100)), end='')
+    if now == total: print()
 
 
 fetcher = MailFetcherConsole()
-
-def status(*args):
-    print(args)
-
-
-hdrs, sizes, loaded_all = fetcher.download_all_headers(status)
-for num, hdr in enumerate(hdrs):
+headers, sizes, loaded_all = fetcher.download_all_headers(progress=progress)
+for num, hdr in enumerate(headers, start=1):
     print(hdr)
-    if input("Load mail?") in {'y', 'Y'}:
-        print(fetcher.download_message(num+1).rstrip())
-        print("-" * 70)
+    if input("Load all message").strip() in {'y', 'Y'}:
+        print(fetcher.download_message_num(b'%d' % num).rstrip(), '\n', '-'*70)
 
-
-last5 = len(hdrs) - 4
-msgs, sizes, loaded_all = fetcher.download_all_messages(status)
-for msg in msgs:
-    print(msg[:200])
-    print("=" * 70)
-
+last5 = len(headers) - 4
+print(len(headers), last5)
+messages, sizes, loaded_all = fetcher.download_all_messages(progress=progress)
+# for msg in messages:
+#     print(msg[:200], '\n', '-'*70)
 
 parser = MailParser()
-for msg in msgs:
-    message = parser.parse_message(msg)
-    cont_type, main_text = parser.find_main_text(message)
-    print("Parsed: {}".format(message["Subject"]))
+print(len(messages))
+for msg in messages:
+    msg = parser.parse_message(msg)
+    cont_type, main_text = parser.find_main_text(msg)
+    raw_header, encoding = email.header.decode_header(msg["Subject"])[0]
+    if encoding is None: continue
+    try:
+        header = raw_header.decode(encoding)
+    except:
+        encoding = msg["Content-type"].split()[-1].split('=')[-1]
+        header = raw_header.decode(encoding)
+    print("=" * 80)
+    print("Parsed: {}".format(header))
     print(main_text)
 input("Press <Enter> to exit")
-

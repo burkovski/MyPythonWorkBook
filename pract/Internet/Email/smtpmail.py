@@ -4,7 +4,7 @@
 это простой сценарий одноразовой отправки - смотрите pymail, PyMailGUI
 и PyMailCGI, реализующие клиентов с более широкими возможностями
 взаимодействия с пользователями; смотрите также popmail.py - сценарий
-получения почты, и пакет mailtools, позволяющий добавлять вложения
+получения почты, и пакет pop_mailtools, позволяющий добавлять вложения
 и форматировать сообщения с помощью стандартного пакета email;
 ###########################################################################
 """
@@ -12,8 +12,7 @@
 import smtplib
 import sys
 import email.utils
-import mailconfig
-
+from mailtools import mailconfig
 
 mail_server = mailconfig.smtp_servername
 mail_user = mailconfig.pop_username
@@ -21,7 +20,7 @@ mail_password = "mr.Hedgehognumber1"  # getpass.getpass("Password for {}?".forma
 
 FROM = input("From? ").strip()          # или целевой сервер будет введен пользователем
 TO = input("To? ").strip()
-TO_SPLIT = TO.strip(';')                # допускается список получателей
+TO_SPLIT = TO.split(';')                # допускается список получателей
 SUBJ = input("Subject? ").strip()
 DATE = email.utils.formatdate()         # текущие время и дата, rfc2822
 

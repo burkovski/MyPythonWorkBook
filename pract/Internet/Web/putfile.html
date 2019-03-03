@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Putfile: upload page</title>
+</head>
+<body>
+    <h1>Select client file to be uploaded</h1>
+    <hr>
+    <form enctype="multipart/form-data" method="post" action="cgi-bin/putfile.py">
+        <p><input type="file" size="50" name="clientfile"></p>
+        <p><input type="submit" value="Upload"></p>
+    </form>
+    <hr>
+    <a href="cgi-bin/getfile.py?filename=cgi-bin/putfile.py">View source code</a>
+</body>
+</html>

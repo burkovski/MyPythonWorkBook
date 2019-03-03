@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CGI 101</title>
+</head>
+<body>
+    <p>
+        Эта страница также вызывает серверный сценарий tutor5.py, но она
+        определяет входные данные уже непосредственно в форме, в виде скрытых полей
+        ввода, а не в виде параметров в конце адреса URL в гиперссылке.
+        Как и прежде, определение этой формы, включая определение скрытых полей,
+        может быть сгенерировано при выводе страницы другим CGI-сценарием, чтобы
+        обеспечить передачу данных следующему сценарию; скрытые поля ввода форм
+        являются еще одним способом сохранения информации между вызовами страниц.
+    </p>
+    <hr>
+    <p>
+    <form method="post" action="cgi-bin/tutor5.py">
+        <input type="hidden" name="name" value="Sue">
+        <input type="hidden" name="language" value="Python">
+        <input type="text" name="job" value="Enter job">
+        <input type="submit" value="Submit Sue">
+    </form>
+    </p><hr>
+</body>
+</html>

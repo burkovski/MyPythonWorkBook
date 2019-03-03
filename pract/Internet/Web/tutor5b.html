@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CGI 101</title>
+</head>
+<body>
+    <h1>Common input devices</h1>
+    <p>Use the same tutor5.py server side script, but change the
+    layout of the form itself. Notice the separation of user interface
+    and processing logic here; the CGI script is independent of the
+    HTML used to interact with the user/client.</p>
+    <hr>
+    <form method="post" action="cgi-bin/tutor5.py">
+        <h3>Please complete the following form and click Send.</h3>
+        <table border cellpadding="3">
+        <tr>
+            <th align="right">Name:</th>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <th align="right">Shoe size:</th>
+            <td>
+                <table>
+                <tr>
+                    <td><input type="radio" name="shoesize" value="small">Small</td>
+                    <td><input type="radio" name="shoesize" value="medium">Medium</td>
+                    <td><input type="radio" name="shoesize" value="large">Large</td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <th align="right">Occupation:</th>
+            <td>
+                <select name="job">
+                    <option>Developer</option>
+                    <option>Manager</option>
+                    <option>Student</option>
+                    <option>Evangelist</option>
+                    <option>Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th align="right">Political affiliations:</th>
+            <td>
+                <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="language" value="Python">Pythonista<br>
+                        <input type="checkbox" name="language" value="Perl">Perlmonger<br>
+                        <input type="checkbox" name="language" value="Tcl">Tcler<br>
+                    </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <th align="right">Comments:</th>
+            <td><textarea name="comment" cols="30" rows="2">Enter text here</textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="Send"></td>
+        </tr>
+        </table>
+    </form>
+    <hr>
+</body>
+</html>

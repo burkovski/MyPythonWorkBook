@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Languages</title>
+</head>
+<body>
+    <h1>Hello World selector</h1>
+    <p>
+        Эта демонстрационная страница показывает, как выглядит вывод сообщения
+        "hello world" на различных языках программирования. Для простоты этот пример
+        показывает лишь команду вывода (чтобы создать законченную программу,
+        на некоторых языках программирования требуется написать дополнительный
+        программный код) и только простейшее решение, обеспечивающее вывод текста
+        в консоль (без графического интерфейса или логики конструирования HTML).
+        Эта страница представляет собой простой файл HTML; следующая страница,
+        которая появится после щелчка на кнопке ниже, генерируется CGI-сценарием
+        на языке Python, выполняющимся на сервере. Дополнительные указания:
+    <ul>
+        <li>
+            Чтобы увидеть разметку HTML страницы, выберите пункт меню 'View Source'
+            ('Исходный код страницы' или 'Просмотр HTML-кода') в броузере.
+        </li>
+        <li>
+            Чтобы увидеть исходный программный код Python сценария CGI,
+            выполняющегося на сервере,
+            <a href="cgi-bin/languages-src.py">щелкните здесь</a> или
+            <a href="cgi-bin/getfile.py?filename=cgi-bin\languages.py">здесь</a>.
+        </li>
+        <li>
+            Чтобы увидеть альтернативную версию этой страницы,
+            сгенерированную динамически,
+            <a href="cgi-bin/languages2.py">щелкните здесь</a>.
+        </li>
+    </ul></p>
+    <hr>
+    <form method="post" action="cgi-bin/languages.py">
+        <p><b>Select a programing language:</b></p>
+        <p>
+            <select name="language">
+                <option>All</option>
+                <option>Python</option>
+                <option>Python2</option>
+                <option>Perl</option>
+                <option>Tcl</option>
+                <option>Scheme</option>
+                <option>SmallTalk</option>
+                <option>Java</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>Basic</option>
+                <option>Fortran</option>
+                <option>Pascal</option>
+                <option>Other</option>
+            </select>
+        </p>
+        <p><input type="submit"></p>
+        <hr>
+    </form>
+</body>
+</html>
