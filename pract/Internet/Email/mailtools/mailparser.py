@@ -228,79 +228,233 @@ class MailParser(MailTool):
         return payload
 
     def find_main_text(self, message, *, as_string=True):
-        for part in message.walk():
-            part_type = part.get_content_type()
-            if part_type == "text/plain":
-                return part_type, self.decode_payload(part, as_string=as_string)
+        """
+        для текстовых клиентов возвращает первую текстовую часть в виде str;
 
-        for part in message.walk():
+        в содержимом простого сообщения или во всех частях составного сообщения
+        отыскивает часть типа text/plain, затем text/html, затем text/*, после
+        чего принимается решение об отсутствии текстовой части, пригодной для
+        отображения;
+
+        это эвристическое решение, но оно охватывает простые, а также
+        multipart/alternative и multipart/mixed сообщения;
+
+        если это не простое сообщение, текстовая часть по умолчанию имеет
+        заголовок content-type со значением text/plain;
+
+        обрабатывает вложенные сообщения, выполняя обход начиная с верхнего
+        уровня, вместо сканирования списка;
+
+        если это не составное сообщение, но имеет тип text/html, возвращает
+        разметку HTML как текст типа HTML: вызывающая программа может
+        открыть его в веб-броузере, извлечь простой текст и так далее;
+
+        если это простое сообщение и текстовая часть  не найдена,
+        следовательно, нет текста для отображения: предусмотрите
+        сохранение/открытие содержимого в графическом интерфейсе;
+
+        предупреждение: не пытайтесь объединить несколько встроенных
+        частей типа text/plain, если они имеются;
+
+        текстовое содержимое может иметь тип bytes - декодирует в str здесь;
+
+        передайте as_string=False, чтобы получить разметку HTML в двоичном
+        представлении для сохранения в файл;
+
+        :param message:
+        :param as_string:
+        :return part_type, decoded_payload:
+        """
+        # отыскать простой текст
+        for part in message.walk():                 # walk выполнит обход всех частей
+            part_type = part.get_content_type()     # если не составное
+            if part_type == "text/plain":           # может иметь формат Base64, QP, uu
+                return part_type, self.decode_payload(part, as_string=as_string)
+        # отыскать часть с разметкой HTML
+        for part in message.walk():                 # HTML отображается вызывающей ф-цией
             part_type = part.get_content_type()
             if part == "text/html":
                 return part_type, self.decode_payload(part, as_string=as_string)
-
+        # отыскать части любого другого текстовго файла, включая XML
         for part in message.walk():
             part_type = part.get_content_type()
             if part == "text":
                 return part_type, self.decode_payload(part, as_string=as_string)
-
+        # не найдено: можно было бы использовать первую часть,
+        # но она не помечена, как текстовая
         fail_text = "[No text to display]"
-        if not as_string:
-            fail_text.encode()
+        if not as_string: fail_text.encode()
         return "text/plain", fail_text
 
     @staticmethod
     def decode_header(raw_header):
+        """
+        декодирует текст заголовка i18n в соответствии со стандартами
+        электронной почты и Юникода и их содержимым;
+
+        в случае ошибки при декодировании возвращает в первоначальном виде;
+
+        клиент должен вызывать этот метод для подготовки заголовка к
+        отображению: объект Message не декодируется;
+
+        пример:
+        '=?UTF-8?Q?Introducing=20Top=20Values=20..Savers?=',
+        'Man where did you get that =?UTF-8?Q?assistant=3F?=';
+
+        метод decode_header автоматически обрабатывает любые разрывы строк
+        в заголовке, может возвращать несколько частей, если в заголовке
+        имеется несколько подстрок, закодированных по-разному, и возвращает
+        все части в виде списка строк bytes, если кодировки были найдены
+        (некодированные части возвращаются как закодированные
+        в raw-unicode-escape, со значением enc=None), но возвращает
+        единственную часть с enc=None, которая является строкой str,
+        а не bytes в Py3.x, если весь заголовок
+        оказался незакодированным (должен обрабатывать смешанные типы);
+
+        следующей реализации было бы достаточно, если бы не возможность
+        появления подстрок, кодированных по-разному,
+        или если бы в переменной enc не возвращалось
+        значение None (возбуждает исключение, в результате
+        которого аргумент raw_hdr возвращается в исходном виде):
+
+        hdr, enc = email.header.decode_header(raw_hdr)[0]
+        return hdr.decode(enc)  # ошибка, если enc=None: нет имени кодировки
+                                # или кодированных подстрок
+
+        :param raw_header:
+        :return decoded_header | raw_header:
+        """
         decoded = []
         try:
             parts = email.header.decode_header(raw_header)
-            for (part, encoding) in parts:
-                if encoding is None:
-                    if not isinstance(part, str):
-                        part = part.decode("raw-unicode-escape")
+            for (part, encoding) in parts:    # для всех подстрок заголовка
+                if encoding is None:          # некодированная часть/неизвестная кодировка
+                    # в случае неизвестной кодировки
+                    if not isinstance(part, str): part = part.decode("raw-unicode-escape")
                 else:
                     part = part.decode(encoding)
                 decoded.append(part)
-            return '\n'.join(decoded)
+            return '\n'.join(decoded)       # декодированный заголовок
         except (UnicodeError, LookupError):
-            return raw_header
+            return raw_header               # с декодированием не получилось
 
     def decode_address_header(self, raw_header):
+        """
+        декодирует заголовок i18n с адресами в соответствии
+        со стандартами электронной почты и Юникода и их содержимым;
+
+        должен анализировать первую часть адреса, чтобы получить
+        интернационализированную часть:
+        '"=?UTF-8?Q?Walmart?=" <newsletters@walmart.com>';
+
+        заголовок From скорее всего будет содержать единственный адрес,
+        но заголовки To, Cc, Bcc могут содержать несколько адресов;
+
+        метод decode_header обрабатывает вложенные подстроки в разных
+        кодировках внутри заголовка, но мы не можем напрямую вызвать
+        его здесь для обработки всего заголовка, потому что он будет
+        завершаться с ошибкой, если закодированная строка
+        с именем будет заканчиваться кавычкой ", а не пробелом
+        или концом строки; смотрите также метод encode_address_header
+        в модуле mailsender, реализующий обратную операцию;
+
+        ниже приводится первая реализация, которая терпела неудачу
+        при обработке некодированных подстрок в имени и возбуждала
+        исключение при встрече некодированных частей типа bytes,
+        если в адресе имеется хоть одна закодированная подстрока;
+
+        name_bytes, name_enc = email.header.decode_header(name)[0] (email+MIME)
+        if name_enc: name = name_bytes.decode(name_enc)            (Юникод?)
+
+        :param raw_header:
+        :return decoded_address_header | decoded_header | raw_header:
+        """
         decoded = []
         try:
+            # разбить на части, учитывая запятые в адресах
             pairs = email.utils.getaddresses([raw_header])
             for (name, address) in pairs:
                 try:
                     name = self.decode_header(name)
                 except Exception:
-                    name = None
+                    name = None         # имя не поддается декодировке
                 joined = email.utils.formataddr((name, address))
                 decoded.append(joined)
-            return ', '.join(decoded)
+            return ', '.join(decoded)   # вернуть первоначальный вид
         except Exception:
+            # попробовать декодировать всю строку,
+            # в случае неудачи -> исходный текст заголовка
             return self.decode_header(raw_header)
 
     @staticmethod
     def split_addresses(field):
+        """
+        используйте в графическом интерфейсе запятую как символ-разделитель
+        адресов и функцию get_addresses для корректного разбиения, которая
+        позволяет использовать запятые в компонентах имен адресов;
+
+        используется программой PyMailGUI для разбиения содержимого
+        заголовков To, Cc, Bcc, обработки ввода пользователя и копий
+        заголовков;
+
+        возвращает пустой список, если аргумент field пуст или возникло
+        какое-либо исключение;
+
+        :param field:
+        :return addresses_list | '':
+        """
         try:
             pairs = email.utils.getaddresses([field])
             return [email.utils.formataddr(pair) for pair in pairs]
         except Exception:
             return ''
 
-    def parse_headers(self, mail_text):
+    def parse_headers(self, header_text):
+        """
+        анализирует только заголовки, возвращает корневой объект
+        email.message.Message;
+
+        останавливается сразу после анализа заголовков, даже если
+        за ними ничего не следует (команда top);
+
+        объект email.message.Message является отображением заголовков
+        сообщения;
+
+        в качестве содержимого объекта сообщения устанавливается
+        значение None, а не необработанный текст тела;
+
+        :param header_text:
+        :return parsed_headers | error_message:
+        """
+        parser = (email.parser.BytesHeaderParser().parsebytes
+                  if isinstance(header_text, bytes)
+                  else email.parser.HeaderParser().parsestr)
         try:
-            return email.parser.Parser().parsestr(mail_text, headersonly=True)
+            return parser(header_text)
         except Exception:
             return self.error_message
 
     def parse_message(self, full_text):
-        try:
-            return email.parser.BytesParser().parsebytes(full_text)
-        except Exception:
-            return self.error_message
+        """
+        анализирует все сообщение, возвращает корневой объект
+        email.message.Message;
 
-    def parse_message_raw(self, full_text):
+        содержимым объекта сообщения является строка, если is_multipart()
+        возвращает False;
+
+        при наличии нескольких частей содержимым объекта сообщения
+        является множество объектов Message;
+
+        метод, используемый здесь, действует так же, как функция
+        email.message_from_string()
+
+        :param full_text:
+        :return parsed_message | error_message:
+        """
+        parser = (email.parser.BytesParser().parsebytes
+                  if isinstance(full_text, bytes)
+                  else email.parser.Parser().parsestr)
         try:
-            return email.parser.HeaderParser().parsestr(full_text)
+            return parser(full_text)
         except Exception:
             return self.error_message

@@ -32,7 +32,7 @@ class MailFetcher(MailTool):
 
     def __init__(self, host=mailconfig.imap_servername, ssl=True):
         self.host           = host                         # DNS адрес сервера
-        self.ssl_conn       = ssl                          # SSL-mode
+        self.__ssl          = ssl                          # SSL-mode
         self.user           = mailconfig.imap_username     # Имя пользователя
         self.__password     = None                         # Если None -> запросить пароль
         self.fetch_encoding = mailconfig.fetch_encoding    # Кодировка для извлечения
@@ -59,8 +59,8 @@ class MailFetcher(MailTool):
         :return server:
         """
         self.trace("Connecting...")
-        password = self.get_password()                      # Файл | GUI | консоль | web-интерфейс | прочее
-        conn_type = (imaplib.IMAP4_SSL if self.ssl_conn     # использовать SSL?
+        password = self.get_password()                   # Файл | GUI | консоль | web-интерфейс | прочее
+        conn_type = (imaplib.IMAP4_SSL if self.__ssl     # использовать SSL?
                      else imaplib.IMAP4)
         try:
             server = conn_type(self.host)        # Соединиться с сервером по заданому адресу
@@ -238,7 +238,7 @@ class MailFetcher(MailTool):
         if initial_prompt:                  # сообшение о начале загрузки
             self.trace(initial_prompt)
         # все/новые?
-        search_param = self.__search_all if not unseen_only else self.__search_all
+        search_param = self.__search_all if not unseen_only else self.__search_unseen
         all_data = []       # тут будут все тектсы загруженных сообщений/заголовков
         all_sizes = []      # а здесь - размеры сообщений
         try:
@@ -261,10 +261,10 @@ class MailFetcher(MailTool):
                 if decode:      # если необходимо - декодируем
                     data = '\n'.join(self.decode_full_text(data))
                 all_data.append(data)
+            if final_prompt:  # сообщение о завершении загрузки
+                self.trace(final_prompt)
         finally:
             self.disconnect(server)
-        if final_prompt:                # сообщение о завершении загрузки
-            self.trace(final_prompt)
         return all_data, all_sizes, loaded_all
 
     def download_all_headers(self, *, unseen_only=False, progress=None, loadfrom=1, decode=False):
@@ -317,7 +317,7 @@ class MailFetcher(MailTool):
         :return:
         """
         return self.__downloader(
-            fetch_command=self.__fetch_header,
+            fetch_command=self.__fetch_full,
             unseen_only=unseen_only,
             progress=progress,
             loadfrom=loadfrom,

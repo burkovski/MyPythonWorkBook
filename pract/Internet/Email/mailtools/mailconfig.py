@@ -53,6 +53,8 @@ my_signature = "Thanks,\n\tBurkovski Danil."
 # ---------------------------------------------------------------------------
 
 save_mail_dir = r"C:\Users\HP\Documents\Sent messages"
+save_mail_encoding = "utf-8"
+
 
 # ---------------------------------------------------------------------------
 # (обязательный параметр: pymail, pymail2) локальный файл, где pymail

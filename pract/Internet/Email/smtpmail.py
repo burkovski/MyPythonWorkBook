@@ -10,13 +10,14 @@
 """
 
 import smtplib
+import getpass
 import sys
 import email.utils
 from mailtools import mailconfig
 
 mail_server = mailconfig.smtp_servername
 mail_user = mailconfig.pop_username
-mail_password = "mr.Hedgehognumber1"  # getpass.getpass("Password for {}?".format(mail_server))
+mail_password = getpass.getpass("Password for {}?".format(mail_server))
 
 FROM = input("From? ").strip()          # или целевой сервер будет введен пользователем
 TO = input("To? ").strip()

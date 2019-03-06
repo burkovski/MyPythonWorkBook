@@ -13,11 +13,12 @@
 """
 
 import poplib
+import getpass
 from mailtools import mailconfig
 
 mail_server = mailconfig.pop_servername
 mail_user = mailconfig.pop_username
-mail_password = "mr.Hedgehognumber1"# getpass.getpass("Password for {}?".format(mail_server))
+mail_password = getpass.getpass("Password for {}?".format(mail_server))
 
 
 print("Connecting...")
