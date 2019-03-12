@@ -1,6 +1,5 @@
 import os
 import sys
-import random
 
 
 class MinMaxArrive:
@@ -32,5 +31,6 @@ class MinMaxArrive:
 if __name__ == "__main__":
     arr = MinMaxArrive(sys.argv[1])
     print(arr)
+    # import random
     # with open("in_file.txt", 'w') as file:
     #     file.write(' '.join(str(random.randint(-99, 99)) for _ in range(50)) + '\n')

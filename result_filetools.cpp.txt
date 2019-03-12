@@ -1,3 +1,0 @@
-Error in file: 'D:\Univ\oop\lab3\filetools.cpp'
-	 line: 44
-	 text: '};'
