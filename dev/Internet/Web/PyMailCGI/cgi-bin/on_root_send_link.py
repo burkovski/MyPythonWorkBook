@@ -5,10 +5,6 @@
 
 
 import commonhtml
-from mailtools import mailconfig
 
 
-commonhtml.edit_page(
-    kind="Write",
-    headers={"From": mailconfig.smtp_user}
-)
+commonhtml.password_page(mode="SMTP")

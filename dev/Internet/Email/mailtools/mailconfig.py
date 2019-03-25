@@ -30,7 +30,7 @@ pop_password_file = None
 # ---------------------------------------------------------------------------
 
 smtp_servername = "smtp.gmail.com"
-smtp_user = "burkovski.danil@gmail.com"
+smtp_username = "burkovski.danil@gmail.com"
 smtp_password_file = None
 
 # ---------------------------------------------------------------------------
@@ -89,4 +89,4 @@ headers_encode_to = None
 # с данной особенностью;
 # ---------------------------------------------------------------------------
 
-fetch_limit = 25
+fetch_limit = 50

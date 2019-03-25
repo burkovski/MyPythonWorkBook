@@ -1,5 +1,9 @@
 import cgi
 import sys
+
+from config import *
+
+
 sys.stdout.reconfigure(encoding="utf-8")
 
 
@@ -12,37 +16,29 @@ response = """<!DOCTYPE html>
     <link rel="icon" href="../img/pylove.ico" type="image/x-icon">
 </head>
 <body>
-    <table align="right"><tr>
-    <td><form method="post" action="personal_area.py">
-        <b>Personal area</b>
-        <input type="hidden" name="session_id" value="{session_id}">
-        <input type="submit" value="{user}">        
-    </form></td>
-    <td><form method="post" action="logout.py">
-        <input type="hidden" name="session_id" value="{session_id}">
-        <input type="submit" value="Logout">        
-    </form></td>
-    </tr></table>
+    <form method="post">
+        <table align="right">
+        <tr><td><b>Personal area</b>
+        <input type="hidden" name="s_id" value="{session_id}">
+        <input type="hidden" name="username" value="{username}">
+        <input type="submit" value="{username}" formaction="personal_area.py"></td>
+        <td><input type="submit" value="Logout" formaction="logout.py">
+        </td></tr></table>        
+    </form>
     <br><br>
     <h1 align="center">PyMailCGI</h1>
     <h2 align="center">A IMAP/SMTP Web Email Interface</h2>
     <p align="center">
         <i>Version 1.0 March __ 2019</i>
     </p>
-    <hr>
-    <h2>Действия</h2>
-    <ul>
-        <form method="post" action="send.py">
-            <input type="hidden" name="session_id" value="{session_id}">
-            <input type="submit" value="Отправить сообщение по SMTP">
-        </form>
-        <form method="post" action="fetch.py">
-            <input type="hidden" name="session_id" value="{session_id}">
-            <input type="submit" value="Просмотреть сообщения на [imap_username]">
-        </form>
-        <li><a href="cgi-bin/send.py?id={session_id}">Отправить сообщение по SMTP</a></li>
-        <li><a href="cgi-bin/fetch.py?id={session_id}">Просмотреть сообщения на [imap_username]</a></li>
-    </ul>
+    <hr><h2>Действия</h2>
+    <form method="post">
+        <table>
+        <tr><td><input type="hidden" name="s_id" value="{session_id}"></tr></td>
+        <tr><td><input type="submit" value="Отправить сообщение по SMTP" formaction="send.py"></td></tr>
+        <tr><td><input type="submit" value="Просмотреть сообщения на [imap_username]" formaction="fetch.py"></td></tr>
+        </table>
+    </form>
     <hr>
     <h2>Обзор</h2>
     <p>
@@ -83,10 +79,9 @@ response = """<!DOCTYPE html>
 """
 
 form = cgi.FieldStorage()
-session_id = form["session_id"].value if "session_id" in form else ''
-user = form["user"].value if "user" in form else 'Unknown'
-redirect = ('<meta http-equiv="refresh" content="1;http://localhost:8000/index.html">'
-            if ("session_id" not in form or not form["session_id"].value)
-            else '')
+session_id = form.getvalue(FormFields.session_id, None)
+username = form.getvalue(FormFields.username, "Unknown")
+redirect = ('<meta http-equiv="refresh" content="1;http://localhost/index.html">'
+            if session_id is None else '')
 
-print(response.format(redirect=redirect, session_id=session_id, user=user))
+print(response.format(redirect=redirect, session_id=session_id, username=username))

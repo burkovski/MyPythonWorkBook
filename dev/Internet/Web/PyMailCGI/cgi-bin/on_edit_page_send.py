@@ -7,7 +7,8 @@ import commonhtml
 import cgi
 import mailtools
 import os
-import sys
+
+from secret import decode
 
 
 def save_attachments(form, save_dir, max_attach=3):
@@ -23,7 +24,7 @@ def save_attachments(form, save_dir, max_attach=3):
             mode = 'rb' if isinstance(filedata, str) else 'wb'
             with open(partname, mode) as savefile:
                 savefile.write(filedata)
-            os.chmod(partname, 766)
+            # os.chmod(partname, 766)
             partnames.append(partname)
     return partnames
 
@@ -32,9 +33,10 @@ save_dir = "parts_upload"
 if not os.path.exists(save_dir):
     os.mkdir(save_dir)
 
-form      = cgi.FieldStorage()
-attaches  = save_attachments(form, save_dir)
-smtp_host = commonhtml.get_standard_smtp_fields(form)
+
+form = cgi.FieldStorage()
+attaches = save_attachments(form, save_dir)
+user, password, host = commonhtml.get_standard_smtp_fields(form)
 
 from_hdr    = commonhtml.get_field(form, "From")
 to_hdr      = commonhtml.get_field(form, "To")
@@ -45,7 +47,7 @@ msg_text    = commonhtml.get_field(form, "Text")
 parser = mailtools.MailParser()
 to_hdr = parser.split_addresses(to_hdr)
 cc_hdr = (parser.split_addresses(cc_hdr)
-          if cc_hdr or cc_hdr != '?'
+          if (cc_hdr and cc_hdr != '?')
           else '')
 extra_hdrs = [("Cc", cc_hdr), ("X-Mailer", "PyMailCGI")]
 
@@ -56,7 +58,9 @@ except (UnicodeError, LookupError):
     body_enc = "utf-8"
 attaches_enc = ["utf-8" for _ in range(len(attaches))]
 
-sender = mailtools.SilentMailSender(smtp_host)
+sender = mailtools.SilentMailSenderAuth(host)
+sender.user = user
+sender.password = decode(password)
 try:
     sender.send_message(
         from_hdr=from_hdr,
@@ -68,7 +72,7 @@ try:
         body_text_encoding=body_enc,
         attaches_encoding=attaches_enc
     )
-except Exception:
+except Exception as exc:
     commonhtml.error_page("Send mail error")
 else:
     commonhtml.confirm_page("Send mail")

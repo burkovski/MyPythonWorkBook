@@ -21,7 +21,7 @@ if __name__ == "__main__":
         subj_hdr="Test mailtools package",
         extra_headers=[("X-Mailer", "Mailtools")],
         body_text="Here is my source code!\n",
-        attaches=["selftest.py", "mustman.jpg"],
+        attaches=["selftest.py", r"C:\Users\HP\Pictures\screensavers\80s\mustman.jpg"],
         body_text_encoding="utf-8",
         attaches_encoding=["utf-8"],
     )

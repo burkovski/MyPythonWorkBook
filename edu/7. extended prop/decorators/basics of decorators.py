@@ -83,22 +83,23 @@ X = C(123)
 Y = C(321)      # Затрет X, если __call__ возвращает self
 print(X.data)
 print(Y.data)
-
-
+print('=' * 50)
 
 
 def dec1(F):
-    print('1')
-    print(F())
+    print("decorator #1 =>", F())
     return lambda: 'X' + F()
+
+
 def dec2(F):
-    print('2')
-    print(F())
+    print("decorator #2 =>", F())
     return lambda: 'Y' + F()
+
+
 def dec3(F):
-    print('3')
-    print(F())
+    print("decorator #3 =>", F())
     return lambda: 'Z' + F()
+
 
 @dec1
 @dec2
@@ -106,4 +107,7 @@ def dec3(F):
 def func():         # func = dec1(dec2(dec3(func)))
     return "spam"
 
-print(func())
+
+# func = dec1(dec2(dec3(func)))
+
+print("func call:", func())

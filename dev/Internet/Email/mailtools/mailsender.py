@@ -136,16 +136,17 @@ class MailSender(MailTool):
         msg_obj["Date"]    = date_hdr
         # реформат даты, используется как часть имени файла, при сохранении
         # получить только дату <DD MM YYYY HH:MM:SS>
-        date = date_hdr[date_hdr.find(' ')+1:date_hdr.rfind(' ')]
+        date = date_hdr[date_hdr.fetch_some(' ') + 1:date_hdr.rfind(' ')]
         date = date.replace(':', '-')                    # двоеточие недопустимо в имени файла
         # все получатели: [to + cc + bcc]
         recipients = set(to_list)           # set - повторы нам ни к чему...
         # X-Mailer, Cc, Bcc, etc.
+        # raise MailSenderAddressFailed(extra_headers)
         for (name, value) in extra_headers:
             if value:
                 if name.lower() in {'cc', 'bcc'}:    # имеются получатели копии/скрытой копии?
-                    value = [self.encode_address_header(v, header_encoding)
-                             for v in value]         # закодировать имена получателей
+                    value = tuple(self.encode_address_header(v, header_encoding)
+                                  for v in value)         # закодировать имена получателей
                     # заголовка bcc быть не должно!
                     # эти адреса - только в списке получателей
                     if name.lower() != 'bcc':
@@ -376,8 +377,8 @@ class MailSenderAuth(MailSender):
 
     def __init__(self, host=None, ssl=True, trace_size=5000):
         super(MailSenderAuth, self).__init__(host, ssl, trace_size)
-        self.user = mailconfig.smtp_user    # имя из конфига
-        self.__password = None              # пароль изначально неизвестен
+        self.user = mailconfig.smtp_username    # имя из конфига
+        self.password = None                    # пароль изначально неизвестен
 
     def connect(self):
         """
@@ -402,6 +403,8 @@ class MailSenderAuth(MailSender):
         server = super(MailSenderAuth, self).connect()
         password = self.get_password()              # Файл | GUI | консоль | web-интерфейс | прочее
         try:
+            if not all((self.user, password)):
+                raise Exception("password: [{}]\nuser: [{}]".format(self.password, self.user))
             server.login(self.user, password)       # Зарегистрироваться на сервере
         except smtplib.SMTPAuthenticationError:     # В случае ошибки авторизации
             raise MailSenderAuthError("Invalid name or password! "
@@ -412,10 +415,10 @@ class MailSenderAuth(MailSender):
                                       "You should use MailSender".format(self.host))
         else:
             prompt = "Connected successfully."
-            if not self.__password:
+            if not self.password:
+                self.password = password      # Валидный пароль -> сохранить для последующих подключений
                 prompt += " Greetings <{}>!".format(self.user)
             self.trace(prompt)
-            self.__password = password      # Валидный пароль -> сохранить для последующих подключений
             return server
 
     def get_password(self):
@@ -425,12 +428,12 @@ class MailSenderAuth(MailSender):
 
         :return password:
         """
-        if self.__password:  # если пароль известен -> вернуть его вызывающему
-            return self.__password
+        if self.password:  # если пароль известен -> вернуть его вызывающему
+            return self.password
         try:
             # попробовать прочитать пароль из файла, если таковой имеется
             with open(mailconfig.imap_password_file) as pswd_file:
-                self.__password = pswd_file.readline()[:-1]
+                self.password = pswd_file.readline()[:-1]
                 self.trace("Password from local file {}".format(mailconfig.imap_password_file))
         except (FileNotFoundError, TypeError):
             # запросить пароль у пользователя
@@ -450,8 +453,17 @@ class MailSenderAuthConsole(MailSenderAuth):
         return getpass.getpass(prompt)
 
 
+class SilentMailSenderAuth(SilentMailTool, MailSenderAuth):
+    """
+    проводит аутентификацию, отключает трассировку
+    """
+    def ask_password(self):
+        pass
+
+
 class SilentMailSender(SilentMailTool, MailSender):
     """
     отключает трассировку
     """
-    def get_password(self): pass
+    def get_password(self):
+        pass

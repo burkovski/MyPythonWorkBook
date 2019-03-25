@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>PyMailCGI Main Page</title>
     <link rel="icon" href="img/pylove.ico" type="image/x-icon">
 </head>
 <body>
-    <a href="cgi-bin/test.py">Go!</a>
-    <h1 align="center">PyMailCGI</h1>
-    <h2 align="center">A IMAP/SMTP Web Email Interface</h2>
-    <p align="center">
-        <i>Version 1.0 March __ 2019</i>
-    </p>
-    <hr>
+    <header>
+        <h1 align="center">PyMailCGI</h1>
+        <h2 align="center">A IMAP/SMTP Web Email Interface</h2>
+        <p align="center"><i>Version 1.0 March 17 2019</i></p><hr>
+    </header>
     <h2>Действия</h2>
     <ul>
-        <li><a href="cgi-bin/on_root_view_link.py">
-            Просмотреть, Ответить, Переслать,
-            Удалить входящее сообщение
-        </a></li>
-        <li><a href="cgi-bin/on_root_send_link.py">
-            Отправить новое сообщение по SMTP
-        </a></li>
-    </ul>
-    <hr>
+        <li><a href="cgi-bin/on_root_view_link.py">Просмотреть,
+            Ответить, Переслать, Удалить входящее сообщение</a></li>
+        <li><a href="cgi-bin/on_root_send_link.py">Отправить
+            новое сообщение по SMTP</a></li>
+    </ul><hr>
     <h2>Обзор</h2>
     <p>
         Этот сайт реализует простой веб-интерфейс к учетной записи электронной
@@ -34,8 +28,7 @@
         CGI-сценариев на языке Python, выполняющихся на сервере (не на вашем
         локальном компьютере) и генерирующих разметку HTML при взаимодействии
         с броузером. Подробности
-        <i><a href="https://github.com/burkovski" target="_blank">
-            смотрите на GitHub</a></i>.
+        <i><a href="https://github.com/burkovski" target="_blank">смотрите на GitHub</a></i>.
     </p>
     <br><hr>
     <h2>Примечания</h2>
@@ -54,14 +47,14 @@
         то следует учесть, что PyMailCgi не гарантирует безопасность пароля вашей
         учетной записи. Смотрите примечания в странице операции просмотра сообщения.
     </p>
-    <hr>
-    <a href="https://www.python.org" target="_blank">
-        <img src="img/pylove.png"
-             height="50" width="50"
-             border="0" hspace="10"></a>
-    <a href="https://github.com/burkovski" target="_blank">
-        <img src="img/github_logo.png"
-             height="60" width="60"
-             border="0"  hspace="10"></a>
+    <footer>
+        <hr><table><tr>
+        <td><a href="https://www.python.org" target="_blank">
+        <img src="../img/pylove_thumb.png" alt="[python logo]"></a><td>
+        <td><a href="https://github.com/burkovski" target="_blank">
+        <img src="../img/github_logo_text.png" alt="[github logo]" hspace="5"></a></td>
+        <th><a href="index.html">Back to root page</a></th>
+        </tr></table>
+    </footer>
 </body>
 </html>

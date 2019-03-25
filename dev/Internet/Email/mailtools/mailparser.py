@@ -212,11 +212,11 @@ class MailParser(MailTool):
         """
         payload = part.get_payload(decode=True)         # bytes
         if as_string and isinstance(payload, bytes):
-            encodings = set()
+            encodings = ['utf-8']
             hdr_enc = part.get_content_charset()        # Сначала проверить заголовки сообщения
-            if hdr_enc: encodings.add(hdr_enc)
-            encodings.add(sys.getdefaultencoding())
-            encodings.update(("latin-1", "utf-8"))
+            if hdr_enc: encodings.append(hdr_enc)
+            encodings.append(sys.getdefaultencoding())
+            encodings.append("latin-1")
             for encoding in encodings:
                 try:
                     payload = payload.decode(encoding)
@@ -409,7 +409,7 @@ class MailParser(MailTool):
         except Exception:
             return ''
 
-    def parse_headers(self, header_text):
+    def parse_headers(self, headers_text):
         """
         анализирует только заголовки, возвращает корневой объект
         email.message.Message;
@@ -423,14 +423,14 @@ class MailParser(MailTool):
         в качестве содержимого объекта сообщения устанавливается
         значение None, а не необработанный текст тела;
 
-        :param header_text:
+        :param headers_text:
         :return parsed_headers | error_message:
         """
         parser = (email.parser.BytesHeaderParser().parsebytes
-                  if isinstance(header_text, bytes)
+                  if isinstance(headers_text, bytes)
                   else email.parser.HeaderParser().parsestr)
         try:
-            return parser(header_text)
+            return parser(headers_text)
         except Exception:
             return self.error_message
 

@@ -31,9 +31,9 @@ class MailFetcher(MailTool):
 
     def __init__(self, host=mailconfig.imap_servername, ssl=True):
         self.host           = host                         # DNS адрес сервера
-        self.__ssl          = ssl                          # SSL-mode
+        self.ssl            = ssl                          # SSL-mode
         self.user           = mailconfig.imap_username     # Имя пользователя
-        self.__password     = None                         # Если None -> запросить пароль
+        self.password       = None                         # Если None -> запросить пароль
         self.fetch_encoding = mailconfig.fetch_encoding    # Кодировка для извлечения
         self.fetch_limit    = mailconfig.fetch_limit       # Лимит извлекаемых сообщений
 
@@ -59,22 +59,23 @@ class MailFetcher(MailTool):
         """
         self.trace("Connecting...")
         password = self.get_password()                   # Файл | GUI | консоль | web-интерфейс | прочее
-        conn_type = (imaplib.IMAP4_SSL if self.__ssl     # использовать SSL?
+        conn_type = (imaplib.IMAP4_SSL if self.ssl     # использовать SSL?
                      else imaplib.IMAP4)
         try:
             server = conn_type(self.host)        # Соединиться с сервером по заданому адресу
             server.login(self.user, password)    # Зарегистрироваться на сервере
+            server.select(mailbox="INBOX")
         except Exception:                        # В случае ошибки авторизации
             raise MailFetcherAuthError(          # Повтороное исключение с сообщением об ошибке
-                "Invalid name or password! Check your settings in file: <{}>".format(mailconfig.__file__)
+                "host: [{}] user: [{}] password: [{}]".format(self.host, self.user, password)
+                # "Invalid name or password ! Check your settings in file: <{}>".format(mailconfig.__file__)
             )
         else:
             prompt = "Connected successfully."
-            if not self.__password:
+            if not self.password:
+                self.password = password        # Валидный пароль -> сохранить для последующих подключений
                 prompt += " Greetings <{}>!".format(self.user)
             self.trace(prompt)
-            server.select(mailbox="INBOX")
-            self.__password = password        # Валидный пароль -> сохранить для последующих подключений
             return server
 
     def disconnect(self, server):
@@ -263,7 +264,6 @@ class MailFetcher(MailTool):
             if final_prompt:  # сообщение о завершении загрузки
                 self.trace(final_prompt)
         finally:
-            import pwd
             self.disconnect(server)
         return all_data, all_sizes, loaded_all
 
@@ -363,8 +363,8 @@ class MailFetcher(MailTool):
         """
         server = self.connect()
         nums_to_uids = self.nums_to_uids(server)
-        if any(map(lambda x: isinstance(x, int), msgs_num)):
-            msgs_num = map(lambda x: b'%d' % x if isinstance(x, int) else x, msgs_num)
+        if any(map(lambda x: not isinstance(x, bytes), msgs_num)):
+            msgs_num = map(lambda x: str(x).encode() if not isinstance(x, bytes) else x, msgs_num)
         self.delete_messages([nums_to_uids[num] for num in msgs_num],   # конвертировать num -> uid
                              server=server, progress=progress)
 
@@ -375,12 +375,12 @@ class MailFetcher(MailTool):
 
         :return password:
         """
-        if self.__password:             # если пароль известен -> вернуть его вызывающему
-            return self.__password
+        if self.password:             # если пароль известен -> вернуть
+            return self.password
         try:
             # попробовать прочитать пароль из файла, если таковой имеется
             with open(mailconfig.imap_password_file) as pswd_file:
-                self.__password = pswd_file.readline()[:-1]
+                self.password = pswd_file.readline()[:-1]
                 self.trace("Password from local file {}".format(mailconfig.imap_password_file))
         except (FileNotFoundError, TypeError):
             # запросить пароль у пользователя
