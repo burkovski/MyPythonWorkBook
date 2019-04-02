@@ -65,14 +65,14 @@ class UserInteraction:
     def create_user(self, dbm):
         if self.password != self.repeat_password:
             params = [(OptionsKeys.kind, "Mismatch passwords"),
-                      (OptionsKeys.prompt, "Password must be match. Try again as {}!"),
-                      (FormFields.handler_script, "sign.up"),
+                      (OptionsKeys.prompt, "Password must be match. Try again as {}!".format(self.username)),
+                      (FormFields.handler_script, "sign_up.py"),
                       (FormFields.submit_button_caption, "Sign up!")]
         else:
             if dbm.contains(self.db_table, self.db_username, self.username):
                 params = [(OptionsKeys.kind, "Wrong username"),
                           (OptionsKeys.prompt, "This user already exist. Sign in as {}!"),
-                          (FormFields.handler_script, "sign.up"),
+                          (FormFields.handler_script, "sign_up.py"),
                           (FormFields.submit_button_caption, "Sign up!")]
             else:
                 params = [(OptionsKeys.kind, "Sign up successful"),
